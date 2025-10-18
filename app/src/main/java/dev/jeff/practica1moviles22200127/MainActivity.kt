@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import dev.jeff.practica1moviles22200127.presentation.navigation.AppNavGraph
 import dev.jeff.practica1moviles22200127.ui.theme.Practica1Moviles22200127Theme
 
 class MainActivity : ComponentActivity() {
@@ -19,33 +20,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Practica1Moviles22200127Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                        // Print(holamundo)
-                        // Print(holamundo)
-                        // Print(holamundo)
+                AppNavGraph()
 
-                    )
-                }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Practica1Moviles22200127Theme {
-        Greeting("Android")
     }
 }

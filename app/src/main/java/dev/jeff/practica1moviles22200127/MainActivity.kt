@@ -24,6 +24,9 @@ class MainActivity : ComponentActivity() {
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                         // Print(holamundo)
+                        // Print(holamundo)
+                        // Print(holamundo)
+
                     )
                 }
             }
